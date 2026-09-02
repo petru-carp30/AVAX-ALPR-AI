@@ -1,0 +1,2 @@
+﻿source_dataset,source_title,source_url,license_name,license_url,real_synthetic,allowed_split,raw_source_modified
+elpd,European License Plate Dataset (ELPD) 2329 Images,https://www.kaggle.com/datasets/tielemarvin/european-license-plate-dataset-elpd,CC BY 4.0,https://creativecommons.org/licenses/by/4.0/,SYNTHETIC,TRAIN_ONLY,False

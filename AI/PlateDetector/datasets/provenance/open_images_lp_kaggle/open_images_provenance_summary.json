@@ -1,0 +1,15 @@
+{
+  "expected_local_images": 5368,
+  "unique_local_image_ids": 5368,
+  "matched_official_metadata": 5368,
+  "matches_by_upstream_split": {
+    "train": 5368,
+    "validation": 0,
+    "test": 0
+  },
+  "missing_provenance": 0,
+  "duplicate_ids_across_upstream_sources": 0,
+  "provenance_csv": "C:\\Users\\carpp\\Desktop\\Projects\\AVAX-ALPR\\ai\\AVAX-ALPR-AI\\AI\\PlateDetector\\datasets\\provenance\\open_images_lp_kaggle\\open_images_provenance.csv",
+  "missing_ids_csv": "C:\\Users\\carpp\\Desktop\\Projects\\AVAX-ALPR\\ai\\AVAX-ALPR-AI\\AI\\PlateDetector\\datasets\\provenance\\open_images_lp_kaggle\\missing_open_images_ids.csv",
+  "duplicate_ids_csv": "C:\\Users\\carpp\\Desktop\\Projects\\AVAX-ALPR\\ai\\AVAX-ALPR-AI\\AI\\PlateDetector\\datasets\\provenance\\open_images_lp_kaggle\\duplicate_open_images_ids.csv"
+}

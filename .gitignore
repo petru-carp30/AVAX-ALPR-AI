@@ -22,3 +22,6 @@ runs/
 events.out.tfevents.*
 *.log
 .idea/
+AI/PlateDetector/documentation/dataset_review/*.jpg
+AI/PlateDetector/datasets/audits/**/*.jpg
+AI/PlateDetector/datasets/audits/**/*before_qc*.csv
