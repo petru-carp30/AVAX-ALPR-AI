@@ -1,0 +1,23 @@
+﻿{
+  "work_package": "AI-WP-001",
+  "experiment": "ai_wp_001_yolox_nano_baseline_v1_416_fp32_bs32",
+  "architecture": "YOLOX-Nano",
+  "dataset": "baseline_v1",
+  "num_classes": 1,
+  "input_size": [416, 416],
+  "batch_size": 32,
+  "precision": "FP32",
+  "amp": false,
+  "epochs": 120,
+  "warmup_epochs": 5,
+  "no_aug_epochs": 15,
+  "seed": 42,
+  "yolox_commit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+  "pretrained_checkpoint": {
+    "file": "yolox_nano_coco_0.1.1rc0.pth",
+    "size_bytes": 7694953,
+    "sha256": "CD28F55FBBC1829F99D9AC9B38A16D259A22889739C8728EA877610201FEFF7B",
+    "source": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.pth"
+  },
+  "test_policy": "TEST_RESERVED_NOT_ACCESSED"
+}
