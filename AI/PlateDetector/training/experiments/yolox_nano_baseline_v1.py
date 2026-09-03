@@ -1,7 +1,10 @@
 from pathlib import Path
 
+import torch
 import torch.nn as nn
+from loguru import logger
 
+from yolox.core import Trainer as YOLOXTrainer
 from yolox.data import COCODataset, TrainTransform, ValTransform
 from yolox.exp import Exp as YOLOXExp
 from yolox.models import YOLOPAFPN, YOLOX, YOLOXHead
@@ -28,6 +31,95 @@ RUNS_ROOT = (
 
 EXP_NAME = "yolox_nano_baseline_v1"
 TEST_BLOCKED_ANNOTATION = "__TEST_BLOCKED_DO_NOT_USE__.json"
+
+class AVAXTrainer(YOLOXTrainer):
+    def resume_train(self, model):
+        if not self.args.resume:
+            return super().resume_train(model)
+
+        logger.info("resume training")
+
+        if self.args.ckpt is None:
+            checkpoint_path = Path(self.file_name) / "latest_ckpt.pth"
+        else:
+            checkpoint_path = Path(self.args.ckpt)
+
+        checkpoint_path = checkpoint_path.resolve()
+
+        logger.info(f"AVAX resume checkpoint: {checkpoint_path}")
+
+        if not checkpoint_path.is_file():
+            raise FileNotFoundError(
+                f"AVAX resume checkpoint does not exist: {checkpoint_path}"
+            )
+
+        checkpoint = torch.load(
+            checkpoint_path,
+            map_location=self.device,
+            weights_only=False,
+        )
+
+        required_keys = {
+            "model",
+            "optimizer",
+            "best_ap",
+            "start_epoch",
+        }
+
+        missing_keys = required_keys.difference(checkpoint)
+
+        if missing_keys:
+            raise RuntimeError(
+                f"AVAX resume checkpoint is missing required keys: {sorted(missing_keys)}"
+            )
+
+        if not isinstance(checkpoint["model"], dict) or not checkpoint["model"]:
+            raise RuntimeError(
+                "AVAX resume checkpoint contains an invalid model state"
+            )
+
+        if not isinstance(checkpoint["optimizer"], dict):
+            raise RuntimeError(
+                "AVAX resume checkpoint contains an invalid optimizer state"
+            )
+
+        if "state" not in checkpoint["optimizer"] or "param_groups" not in checkpoint["optimizer"]:
+            raise RuntimeError(
+                "AVAX resume checkpoint optimizer state is incomplete"
+            )
+
+        model.load_state_dict(checkpoint["model"], strict=True)
+        self.optimizer.load_state_dict(checkpoint["optimizer"])
+
+        self.best_ap = checkpoint["best_ap"]
+
+        if self.args.start_epoch is not None:
+            start_epoch = self.args.start_epoch - 1
+        else:
+            start_epoch = int(checkpoint["start_epoch"])
+
+        self.start_epoch = start_epoch
+
+        logger.info(
+            "AVAX resume state restored: "
+            f"start_epoch={self.start_epoch}, "
+            f"best_ap={self.best_ap}, "
+            f"model_state_keys={len(checkpoint['model'])}, "
+            f"optimizer_state_entries={len(checkpoint['optimizer']['state'])}"
+        )
+
+        logger.info(
+            "loaded checkpoint '{}' (epoch {})".format(
+                checkpoint_path,
+                self.start_epoch,
+            )
+        )
+
+        logger.info(
+            f"AVAX next displayed training epoch: {self.start_epoch + 1}"
+        )
+
+        return model
 
 
 class Exp(YOLOXExp):
@@ -218,3 +310,6 @@ class Exp(YOLOXExp):
             )
         finally:
             yolox.layers.COCOeval_opt = original_coco_eval
+
+    def get_trainer(self, args):
+        return AVAXTrainer(self, args)
