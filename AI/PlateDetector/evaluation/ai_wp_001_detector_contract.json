@@ -1,0 +1,51 @@
+﻿{
+  "work_package": "AI-WP-001",
+  "component": "License Plate Detector",
+  "status": "VAL_DEVELOPMENT_FROZEN",
+  "architecture": "YOLOX-Nano",
+  "dataset": "baseline_v1",
+  "input_size": [416, 416],
+  "num_classes": 1,
+  "class_name": "license_plate",
+  "checkpoint": {
+    "file": "best_ckpt.pth",
+    "selected_epoch": 85,
+    "sha256": "50B49FADBB9F64F415752E878E60264426274FD6B869F89961EF0978E9CE6CBF",
+    "best_val_ap50_95": 0.4015496936193037
+  },
+  "runtime_postprocessing": {
+    "confidence_threshold": 0.225,
+    "nms_threshold": 0.45
+  },
+  "validation_selection": {
+    "match_iou_threshold": 0.50,
+    "tp": 652,
+    "fp": 149,
+    "fn": 205,
+    "precision": 0.8139825218476904,
+    "recall": 0.7607934655775963,
+    "f1": 0.7864897466827503
+  },
+  "selection_basis": [
+    "coarse VAL threshold sweep",
+    "fine VAL threshold sweep",
+    "negative false-positive visual review",
+    "recovered detection visual review",
+    "extra false-positive visual review",
+    "persistent false-negative visual review"
+  ],
+  "known_limitations": [
+    "small and distant license plates",
+    "multi-plate scenes",
+    "motion blur and difficult viewing angles",
+    "partial occlusion",
+    "incomplete or inconsistent source annotations"
+  ],
+  "test_policy": {
+    "test_accessed": false,
+    "checkpoint_frozen_before_test": true,
+    "confidence_frozen_before_test": true,
+    "nms_frozen_before_test": true,
+    "test_results_must_not_be_used_for_tuning": true
+  }
+}

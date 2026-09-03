@@ -25,3 +25,8 @@ events.out.tfevents.*
 AI/PlateDetector/documentation/dataset_review/*.jpg
 AI/PlateDetector/datasets/audits/**/*.jpg
 AI/PlateDetector/datasets/audits/**/*before_qc*.csv
+
+# Detector evaluation visual review artifacts
+AI/PlateDetector/evaluation/val_visual_review/**/*.jpg
+AI/PlateDetector/evaluation/val_visual_review/**/*.jpeg
+AI/PlateDetector/evaluation/val_visual_review/**/*.png

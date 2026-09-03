@@ -1,0 +1,24 @@
+{
+  "checkpoint_sha256": "50B49FADBB9F64F415752E878E60264426274FD6B869F89961EF0978E9CE6CBF",
+  "checkpoint_epoch": 85,
+  "val_images": 625,
+  "val_negative_images": 50,
+  "match_iou_threshold": 0.5,
+  "nms_threshold": 0.45,
+  "candidates": {
+    "recall": 0.175,
+    "balanced": 0.225,
+    "f1": 0.375
+  },
+  "reviewed_unique_images": 182,
+  "category_image_counts": {
+    "recovered_0175_vs_0375": 29,
+    "recovered_0225_vs_0375": 23,
+    "persistent_fn_0175": 138,
+    "extra_fp_0225_vs_0375": 41,
+    "negative_fp": 4,
+    "multi_plate_error": 125
+  },
+  "cached_predictions_unchanged": true,
+  "test_accessed": false
+}
