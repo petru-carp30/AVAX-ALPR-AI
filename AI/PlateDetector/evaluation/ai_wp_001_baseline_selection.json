@@ -1,0 +1,28 @@
+﻿{
+  "work_package": "AI-WP-001",
+  "experiment": "ai_wp_001_yolox_nano_baseline_v1_416_fp32_bs32",
+  "architecture": "YOLOX-Nano",
+  "dataset": "baseline_v1",
+  "selected_checkpoint": {
+    "file": "best_ckpt.pth",
+    "selected_epoch": 85,
+    "start_epoch": 85,
+    "size_bytes": 7581047,
+    "sha256": "50B49FADBB9F64F415752E878E60264426274FD6B869F89961EF0978E9CE6CBF"
+  },
+  "validation": {
+    "best_ap50_95": 0.4015496936193037
+  },
+  "model": {
+    "num_classes": 1,
+    "parameters": 896754,
+    "input_size": [416, 416]
+  },
+  "training": {
+    "batch_size": 32,
+    "precision": "FP32",
+    "epochs": 120
+  },
+  "test_accessed": false,
+  "checkpoint_selection_status": "FROZEN"
+}
