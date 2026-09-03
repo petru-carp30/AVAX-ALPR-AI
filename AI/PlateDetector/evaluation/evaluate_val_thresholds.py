@@ -32,25 +32,26 @@ EXPECTED_VAL_IMAGES = 625
 EXPECTED_VAL_NEGATIVES = 50
 
 CONFIDENCE_THRESHOLDS = [
-    0.01,
-    0.03,
-    0.05,
-    0.10,
     0.15,
+    0.175,
     0.20,
+    0.225,
     0.25,
+    0.275,
     0.30,
+    0.325,
+    0.35,
+    0.375,
     0.40,
-    0.50,
-    0.60,
-    0.70,
+    0.425,
+    0.45,
 ]
 
 NMS_THRESHOLDS = [
+    0.40,
     0.45,
+    0.50,
     0.55,
-    0.65,
-    0.75,
 ]
 
 MATCH_IOU_THRESHOLD = 0.50
