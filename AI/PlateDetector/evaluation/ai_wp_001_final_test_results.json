@@ -1,0 +1,50 @@
+{
+  "work_package": "AI-WP-001",
+  "evaluation": "FINAL_TEST_ONE_SHOT",
+  "test_accessed": true,
+  "post_test_tuning_performed": false,
+  "checkpoint": {
+    "file": "best_ckpt.pth",
+    "selected_epoch": 60,
+    "sha256": "9A0C6A9D8ED0B9CAD31212F7ADDECF2C35C4B2CFF932ACFF1D02DF34519746B0"
+  },
+  "model": {
+    "architecture": "YOLOX-Nano",
+    "input_size": [
+      512,
+      512
+    ]
+  },
+  "test_dataset": {
+    "images": 669,
+    "plate_instances": 914,
+    "negative_images": 50
+  },
+  "coco_protocol": {
+    "confidence_threshold": 0.01,
+    "nms_threshold": 0.65,
+    "map_50_95": 0.45047543451748373,
+    "map_50": 0.8126516155725855
+  },
+  "runtime_operating_point": {
+    "confidence_threshold": 0.225,
+    "nms_threshold": 0.45,
+    "match_iou_threshold": 0.5,
+    "tp": 747,
+    "fp": 159,
+    "fn": 167,
+    "precision": 0.8245033112582781,
+    "recall": 0.8172866520787746,
+    "f1": 0.820879120879121,
+    "duplicate_detections": 1,
+    "negative_images_with_fp": 3,
+    "negative_fp_detections": 3
+  },
+  "desktop_timing": {
+    "average_model_forward_ms_per_image": 1.5674381165914242,
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "note": "Desktop CUDA timing only. Not an Android benchmark."
+  },
+  "cached_raw_predictions_unchanged": true,
+  "android_latency": "NOT YET MEASURED"
+}
