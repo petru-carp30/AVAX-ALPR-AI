@@ -1,0 +1,143 @@
+{
+  "artifact": {
+    "filename": "avax_plate_detector_yolox_nano_512_v1.onnx",
+    "size_bytes": 3703049,
+    "sha256": "B42313FE76EFCD98332430A25FE6BEEC553FC5FE7633957917453836AEA81793",
+    "opset": 17
+  },
+  "runtime": {
+    "onnx": "1.22.0",
+    "onnxruntime": "1.29.0",
+    "onnxruntime_provider": "CPUExecutionProvider",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.5.2"
+  },
+  "input": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      512,
+      512
+    ],
+    "dtype": "tensor(float)"
+  },
+  "output": {
+    "name": "output",
+    "shape": [
+      1,
+      5376,
+      6
+    ],
+    "decoded_in_model": true
+  },
+  "comparison": {
+    "sample_count": 6,
+    "source_split": "VAL",
+    "raw_rtol": 0.001,
+    "raw_atol": 0.001,
+    "max_allowed_box_difference_px": 0.5,
+    "max_allowed_score_difference": 0.001,
+    "raw_allclose_pass": true,
+    "detection_consistency_pass": true,
+    "overall_max_abs_difference": 0.0094757080078125,
+    "overall_max_mean_abs_difference": 7.148516306187958e-05,
+    "overall_max_box_difference_px": 6.103515625e-05,
+    "overall_max_score_difference": 1.7881393432617188e-07
+  },
+  "samples": [
+    {
+      "file_name": "openimages__000228608388803f.jpg",
+      "original_width": 1024,
+      "original_height": 768,
+      "resize_scale": 0.5,
+      "raw_allclose": true,
+      "max_abs_difference": 0.0056304931640625,
+      "mean_abs_difference": 2.4939392460510135e-05,
+      "pytorch_detection_count": 1,
+      "onnx_detection_count": 1,
+      "detection_count_match": true,
+      "max_box_difference_px": 6.103515625e-05,
+      "max_score_difference": 1.1920928955078125e-07,
+      "detection_consistency": true
+    },
+    {
+      "file_name": "openimages__290f440dcf7ffef5.jpg",
+      "original_width": 1024,
+      "original_height": 768,
+      "resize_scale": 0.5,
+      "raw_allclose": true,
+      "max_abs_difference": 0.0014514923095703125,
+      "mean_abs_difference": 2.16658827412175e-05,
+      "pytorch_detection_count": 1,
+      "onnx_detection_count": 1,
+      "detection_count_match": true,
+      "max_box_difference_px": 3.814697265625e-06,
+      "max_score_difference": 1.1920928955078125e-07,
+      "detection_consistency": true
+    },
+    {
+      "file_name": "openimages__6700e1a3a0a99653.jpg",
+      "original_width": 1024,
+      "original_height": 768,
+      "resize_scale": 0.5,
+      "raw_allclose": true,
+      "max_abs_difference": 0.00457763671875,
+      "mean_abs_difference": 3.2128154998645186e-05,
+      "pytorch_detection_count": 2,
+      "onnx_detection_count": 2,
+      "detection_count_match": true,
+      "max_box_difference_px": 1.52587890625e-05,
+      "max_score_difference": 1.7881393432617188e-07,
+      "detection_consistency": true
+    },
+    {
+      "file_name": "openimages__a8ae2f60e47bbc1d.jpg",
+      "original_width": 1024,
+      "original_height": 768,
+      "resize_scale": 0.5,
+      "raw_allclose": true,
+      "max_abs_difference": 0.00597381591796875,
+      "mean_abs_difference": 2.6482945031602867e-05,
+      "pytorch_detection_count": 1,
+      "onnx_detection_count": 1,
+      "detection_count_match": true,
+      "max_box_difference_px": 3.0517578125e-05,
+      "max_score_difference": 0.0,
+      "detection_consistency": true
+    },
+    {
+      "file_name": "openimages__eca6255b775c40e8.jpg",
+      "original_width": 1024,
+      "original_height": 683,
+      "resize_scale": 0.5,
+      "raw_allclose": true,
+      "max_abs_difference": 0.0094757080078125,
+      "mean_abs_difference": 3.9937269320944324e-05,
+      "pytorch_detection_count": 1,
+      "onnx_detection_count": 1,
+      "detection_count_match": true,
+      "max_box_difference_px": 3.0517578125e-05,
+      "max_score_difference": 5.960464477539063e-08,
+      "detection_consistency": true
+    },
+    {
+      "file_name": "romanian__fe85539a0bdf8422.jpg",
+      "original_width": 1280,
+      "original_height": 720,
+      "resize_scale": 0.4,
+      "raw_allclose": true,
+      "max_abs_difference": 0.008514404296875,
+      "mean_abs_difference": 7.148516306187958e-05,
+      "pytorch_detection_count": 1,
+      "onnx_detection_count": 1,
+      "detection_count_match": true,
+      "max_box_difference_px": 3.0517578125e-05,
+      "max_score_difference": 0.0,
+      "detection_consistency": true
+    }
+  ],
+  "onnx_checker": "PASS",
+  "validation_result": "PASS",
+  "android_latency": "NOT YET MEASURED"
+}
