@@ -30,3 +30,15 @@ AI/PlateDetector/datasets/audits/**/*before_qc*.csv
 AI/PlateDetector/evaluation/val_visual_review/**/*.jpg
 AI/PlateDetector/evaluation/val_visual_review/**/*.jpeg
 AI/PlateDetector/evaluation/val_visual_review/**/*.png
+
+# YOLOX Nano 512 VAL visual review artifacts
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.jpg
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.jpeg
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.png
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.zip
+
+# YOLOX Nano 512 VAL visual review artifacts
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.jpg
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.jpeg
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.png
+AI/PlateDetector/evaluation/val_visual_review_512/**/*.zip

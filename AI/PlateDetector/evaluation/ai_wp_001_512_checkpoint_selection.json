@@ -1,0 +1,41 @@
+﻿{
+  "work_package": "AI-WP-001",
+  "experiment": "ai_wp_001_yolox_nano_baseline_v1_512_fp32_bs32",
+  "architecture": "YOLOX-Nano",
+  "dataset": "baseline_v1",
+  "input_size": [512, 512],
+  "checkpoint_selection": {
+    "file": "best_ckpt.pth",
+    "selected_epoch": 60,
+    "checkpoint_start_epoch_field": 60,
+    "best_val_ap50_95": 0.42507705795236367,
+    "size_bytes": 7581047,
+    "sha256": "9A0C6A9D8ED0B9CAD31212F7ADDECF2C35C4B2CFF932ACFF1D02DF34519746B0"
+  },
+  "runtime_operating_point": {
+    "confidence_threshold": 0.225,
+    "nms_threshold": 0.45,
+    "match_iou_threshold": 0.50,
+    "tp": 682,
+    "fp": 148,
+    "fn": 175,
+    "precision": 0.8216867469879519,
+    "recall": 0.7957992998833139,
+    "f1": 0.8085358624777712
+  },
+  "visual_adjudication": {
+    "status": "PASS",
+    "candidate_thresholds": [0.175, 0.225, 0.275],
+    "recovered_0225_vs_0275_images": 10,
+    "persistent_fn_0175_images": 131,
+    "negative_fp_review_images": 6,
+    "extra_fp_0225_vs_0275_images": 15,
+    "decision": "Prefer 0.225 over 0.275 because the F1 difference is negligible while 0.225 preserves 10 additional true positives and 10 fewer false negatives."
+  },
+  "selection_status": "VAL_DEVELOPMENT_FROZEN",
+  "test_policy": {
+    "test_accessed": false,
+    "test_must_not_be_used_for_checkpoint_selection": true,
+    "test_must_not_be_used_for_threshold_selection": true
+  }
+}

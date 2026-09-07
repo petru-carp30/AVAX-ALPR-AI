@@ -1,0 +1,51 @@
+﻿{
+  "work_package": "AI-WP-001",
+  "selection_stage": "TRAIN_VAL_ONLY",
+  "test_accessed": false,
+  "baseline_416": {
+    "architecture": "YOLOX-Nano",
+    "input_size": [416, 416],
+    "selected_epoch": 85,
+    "best_val_ap50_95": 0.4015496936193037,
+    "runtime_confidence": 0.225,
+    "runtime_nms": 0.45,
+    "tp": 652,
+    "fp": 149,
+    "fn": 205,
+    "precision": 0.8139825218476904,
+    "recall": 0.7607934655775963,
+    "f1": 0.7864897466827503
+  },
+  "challenger_512": {
+    "architecture": "YOLOX-Nano",
+    "input_size": [512, 512],
+    "selected_epoch": 60,
+    "best_val_ap50_95": 0.42507705795236367,
+    "checkpoint_sha256": "9A0C6A9D8ED0B9CAD31212F7ADDECF2C35C4B2CFF932ACFF1D02DF34519746B0",
+    "runtime_confidence": 0.225,
+    "runtime_nms": 0.45,
+    "tp": 682,
+    "fp": 148,
+    "fn": 175,
+    "precision": 0.8216867469879519,
+    "recall": 0.7957992998833139,
+    "f1": 0.8085358624777712
+  },
+  "val_delta_512_minus_416": {
+    "best_ap50_95": 0.02352736433305997,
+    "tp": 30,
+    "fp": -1,
+    "fn": -30,
+    "recall": 0.0350058343057176,
+    "f1": 0.0220461157950209
+  },
+  "selected_detector": {
+    "architecture": "YOLOX-Nano",
+    "input_size": [512, 512],
+    "confidence_threshold": 0.225,
+    "nms_threshold": 0.45,
+    "reason": "Higher VAL AP and materially higher recall/F1 with fewer false negatives and no increase in total false positives at the same operating point."
+  },
+  "status": "FINAL_DETECTOR_SELECTED_BEFORE_TEST",
+  "next_step": "ONE_SHOT_FINAL_TEST"
+}
