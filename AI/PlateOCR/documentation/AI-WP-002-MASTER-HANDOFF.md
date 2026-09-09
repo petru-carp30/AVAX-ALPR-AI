@@ -1,4 +1,4 @@
-# MASTER HANDOFF — AI-WP-002
+﻿# MASTER HANDOFF â€” AI-WP-002
 
 ## STATUS REQUEST
 
@@ -12,7 +12,7 @@ AI-WP-002 must not be marked DONE by the AI workstream.
 
 Selected engine:
 
-Google ML Kit Text Recognition v2 — Latin bundled model
+Google ML Kit Text Recognition v2 â€” Latin bundled model
 
 Android artifact:
 
@@ -178,7 +178,7 @@ Actual mobile latency must be measured during MOB-AI-WP-002.
 
 ## PREPROCESSING EXPERIMENT HISTORY
 
-### V2 — baseline
+### V2 â€” baseline
 
 No resize.
 
@@ -190,7 +190,7 @@ Results:
 - empty results: 6
 - Romanian exact: 2 / 8
 
-### V3 — upscale crops below 48 px to 96 px
+### V3 â€” upscale crops below 48 px to 96 px
 
 Results:
 
@@ -202,7 +202,7 @@ Results:
 
 This configuration introduced regressions on several crops that were already OCR-readable.
 
-### V4 — selective upscale below 32 px to 96 px
+### V4 â€” selective upscale below 32 px to 96 px
 
 Final selected configuration.
 
@@ -471,13 +471,13 @@ Android instrumentation validation code was used only to evaluate the mobile OCR
 
 ## REFERENCE COMMIT
 
-PENDING FINAL AI COMMIT
+64872bf2b0e709f56c30eba1e778ae352af076a2
 
 ---
 
 ## RECOMMENDED NEXT TASK
 
-MOB-AI-WP-002 — OCR + Automatic Local Verification Pipeline
+MOB-AI-WP-002 â€” OCR + Automatic Local Verification Pipeline
 
 ---
 
@@ -486,3 +486,4 @@ MOB-AI-WP-002 — OCR + Automatic Local Verification Pipeline
 READY FOR MASTER REVIEW
 
 Do not mark AI-WP-002 DONE automatically.
+
