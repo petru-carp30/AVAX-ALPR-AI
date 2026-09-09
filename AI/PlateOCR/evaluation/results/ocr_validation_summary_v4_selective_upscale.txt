@@ -1,0 +1,23 @@
+AVAX ALPR OCR MVP VALIDATION
+
+engine=Google ML Kit Text Recognition v2 Latin
+artifact=com.google.mlkit:text-recognition:16.0.1
+candidate_selection=plate_like_ocr_line
+preprocessing=upscale_small_crops
+upscale_threshold_height=32
+upscale_target_height=96
+samples=50
+normalized_exact_matches=35
+normalized_exact_accuracy=0.7000
+total_ground_truth_characters=369
+total_edit_distance=23
+character_error_rate=0.0623
+character_accuracy=0.9377
+empty_results=0
+
+romanian_samples=8
+romanian_normalized_exact_matches=4
+elpd_samples=42
+elpd_normalized_exact_matches=31
+
+android_latency=NOT_YET_MEASURED

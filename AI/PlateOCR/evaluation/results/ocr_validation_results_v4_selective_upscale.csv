@@ -1,0 +1,65 @@
+filename,ground_truth,full_raw_text,candidate_raw_text,normalized_text,confidence,normalized_exact_match,edit_distance,candidate_count,original_width,original_height,processed_width,processed_height,scale_factor,notes,source_group
+plate_0002.jpg,NMEO7592,"Chta
+Tl
+NM-E0 7592",NM-E0 7592,NME07592,0.7447917,false,1,3,512,118,512,118,1.0,clear,elpd
+plate_0003.jpg,THLU3785,THL U 3785,THL U 3785,THLU3785,0.8901367,true,0,1,179,46,179,46,1.0,small;clear,elpd
+plate_0005.jpg,WGCY3794,WG CY 3794,WG CY 3794,WGCY3794,0.8261719,true,0,1,223,58,223,58,1.0,clear,elpd
+plate_0007.jpg,CBK4280,CB-K 4280,CB-K 4280,CBK4280,0.86083984,true,0,1,215,84,215,84,1.0,small;clear,elpd
+plate_0009.jpg,GUN4822,GUN- 4822,GUN- 4822,GUN4822,0.6767578,true,0,1,157,41,157,41,1.0,small;clear,elpd
+plate_0014.jpg,NLD72,"1c
+NL-D 72",NL-D 72,NLD72,0.7988281,true,0,2,274,115,274,115,1.0,clear,elpd
+plate_0015.jpg,B121PHD,B 121 PHD,B 121 PHD,B121PHD,0.8270089,true,0,1,241,67,241,67,1.0,clear,romanian_lp
+plate_0016.jpg,CMFH4336,GM FH 4336,GM FH 4336,GMFH4336,0.78564453,false,1,1,119,39,119,39,1.0,small,elpd
+plate_0020.jpg,GEOT5314,GEO- T 5314,GEO- T 5314,GEOT5314,0.7604167,true,0,1,185,46,185,46,1.0,small;clear,elpd
+plate_0021.jpg,NOHE8843,NOH-E-8843,NOH-E-8843,NOHE8843,0.8191406,true,0,1,278,75,278,75,1.0,clear,elpd
+plate_0025.jpg,SABR4396,"SAB R 4396
+MOnZSROREL CDINS",SAB R 4396,SABR4396,0.8413086,true,0,2,309,84,309,84,1.0,clear,elpd
+plate_0026.jpg,SLUE3918,SLU-E 3918|,SLU-E 3918|,SLUE3918,0.71875,true,0,1,183,44,183,44,1.0,small;slight_blur,elpd
+plate_0030.jpg,ROHIX7088,ROHI X 7088,ROHI X 7088,ROHIX7088,0.6987847,true,0,1,120,35,120,35,1.0,small;clear,elpd
+plate_0031.jpg,B778NDA,8778NDA,8778NDA,8778NDA,0.6389509,false,1,1,100,28,342,96,3.4285715,small;clear;overexposed,romanian_lp
+plate_0032.jpg,FBOF8715,-FBoF 8715,-FBoF 8715,FBOF8715,0.79904515,true,0,1,151,39,151,39,1.0,small;clear,elpd
+plate_0033.jpg,B209BYE,6 2098YE,6 2098YE,62098YE,0.5691964,false,2,1,97,27,344,96,3.5555556,small;overexposed,romanian_lp
+plate_0034.jpg,MW2816,"MOW•2816
+TMC",MOW•2816,MOW2816,0.6220703,false,1,2,315,78,315,78,1.0,clear,elpd
+plate_0035.jpg,MHU8455,NH-U 8A551,NH-U 8A551,NHU8A551,0.35199654,false,3,1,106,26,391,96,3.6923077,small;pixelated,elpd
+plate_0037.jpg,WWC3083,WW-C 3083,WW-C 3083,WWC3083,0.7211914,true,0,1,238,60,238,60,1.0,clear,elpd
+plate_0040.jpg,BRVR9354,BRY R S354,BRY R S354,BRYRS354,0.65722656,false,2,1,234,76,234,76,1.0,clear;slight_blur,elpd
+plate_0042.jpg,WAML782,"WAM-L
+782",WAM-L,WAML,0.76640624,false,3,2,366,86,366,86,1.0,clear,elpd
+plate_0046.jpg,BUR6507,BU-R 6507,BU-R 6507,BUR6507,0.8671875,true,0,1,247,91,247,91,1.0,clear,elpd
+plate_0047.jpg,IXNI2593,IX NI 2593,IX NI 2593,IXNI2593,0.69433594,true,0,1,136,39,136,39,1.0,small;clear,elpd
+plate_0048.jpg,B150PEC,B50PEC,B50PEC,B50PEC,0.48893228,false,1,1,114,32,114,32,1.0,small;slight_blur,romanian_lp
+plate_0052.jpg,B01XEN,BOIXEN,BOIXEN,BOIXEN,0.7057292,false,2,1,185,45,185,45,1.0,slight_blur;overexposed,romanian_lp
+plate_0055.jpg,WYD445,W YD:445,W YD:445,WYD445,0.7248884,true,0,1,193,56,193,56,1.0,clear,elpd
+plate_0057.jpg,B91SYE,B91SYE,B91SYE,B91SYE,0.41927084,true,0,1,91,25,349,96,3.84,small;overexposed,romanian_lp
+plate_0058.jpg,WFVE1248,"NF VE 1248
+mtte
+Catn
+Ten",NF VE 1248,NFVE1248,0.74316406,false,1,4,237,62,237,62,1.0,clear;overexposed,elpd
+plate_0062.jpg,ULZN4780,EUL ZN 4780,EUL ZN 4780,EULZN4780,0.75,false,1,1,184,55,184,55,1.0,clear;overexposed,elpd
+plate_0064.jpg,WOS780,WOS 780,WOS 780,WOS780,0.7688802,true,0,1,107,33,107,33,1.0,small;angled;slight_blur,elpd
+plate_0065.jpg,IF10KAX,IF 10 KAX,IF 10 KAX,IF10KAX,0.67578125,true,0,1,98,25,376,96,3.84,small;angled;slight_blur,romanian_lp
+plate_0071.jpg,CHY7594,-CH-Y 7594,-CH-Y 7594,CHY7594,0.71050346,true,0,1,159,40,159,40,1.0,clear,elpd
+plate_0073.jpg,LFU8226,"LF-U8226
+Seuseed Gennaen",LF-U8226,LFU8226,0.7871094,true,0,2,321,93,321,93,1.0,clear,elpd
+plate_0078.jpg,APDI5511,-APDI 5511|,-APDI 5511|,APDI5511,0.51171875,true,0,1,125,33,125,33,1.0,small;clear,elpd
+plate_0079.jpg,HEIQ7067,HEI Q 7067,HEI Q 7067,HEIQ7067,0.7265625,true,0,1,178,82,178,82,1.0,clear;angled,elpd
+plate_0082.jpg,FKT8145,FK-T8145,FK-T8145,FKT8145,0.7871094,true,0,1,187,46,187,46,1.0,clear,elpd
+plate_0083.jpg,NESSU782,NES SU 782,NES SU 782,NESSU782,0.7236328,true,0,1,179,59,179,59,1.0,clear;angled,elpd
+plate_0085.jpg,BGDZ8332,"BGD Z 833
+Noraok. nietle Psc6 Wiecinovldl",BGD Z 833,BGDZ833,0.8677455,false,1,2,464,131,464,131,1.0,clear;angled,elpd
+plate_0086.jpg,BRKUU965,"BRK UU 965
+AIOMMR HIEEUUINI - A BIS RA LOS",BRK UU 965,BRKUU965,0.72998047,true,0,2,440,178,440,178,1.0,clear;angled,elpd
+plate_0087.jpg,SBKEM120,SBK EM 120,SBK EM 120,SBKEM120,0.58447266,true,0,1,156,98,156,98,1.0,clear;angled,elpd
+plate_0088.jpg,PMM2427,PM. M2427,PM. M2427,PMM2427,0.76171875,true,0,1,206,49,206,49,1.0,small;clear,elpd
+plate_0089.jpg,OSLON757,0SL ON 757A,0SL ON 757A,0SLON757A,0.59418404,false,2,1,134,38,134,38,1.0,small;clear,elpd
+plate_0092.jpg,ABGB4316,ABG B4316,ABG B4316,ABGB4316,0.82666016,true,0,1,234,63,234,63,1.0,slight_blur,elpd
+plate_0093.jpg,HGS2988,HG-S 2988,HG-S 2988,HGS2988,0.81152344,true,0,1,163,40,163,40,1.0,clear;angled,elpd
+plate_0094.jpg,SFBON766,SFB ON 766,SFB ON 766,SFBON766,0.7915039,true,0,1,107,27,380,96,3.5555556,small;pixelated,elpd
+plate_0096.jpg,B68SPK,B68 SPK,B68 SPK,B68SPK,0.66471356,true,0,1,110,38,110,38,1.0,small;angled;pixelated,romanian_lp
+plate_0097.jpg,LUKXH209,"LUK, XH 209","LUK, XH 209",LUKXH209,0.5442708,true,0,1,198,75,198,75,1.0,clear;angled,elpd
+plate_0098.jpg,BYLP4152,"BYL•P 4152
+DANHCAiAA BAR7E9",BYL•P 4152,BYLP4152,0.77994794,true,0,2,252,67,252,67,1.0,clear,elpd
+plate_0099.jpg,NWG7513,"Na G-7513
+Cerresivoad",Na G-7513,NAG7513,0.66796875,false,1,2,288,98,288,98,1.0,clear;angled,elpd
+plate_0100.jpg,OLDFV306,OLD-FV 306,OLD-FV 306,OLDFV306,0.71484375,true,0,1,305,71,305,71,1.0,clear;angled,elpd
